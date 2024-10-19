@@ -2,20 +2,40 @@ import { TypeAnimation } from 'react-type-animation';
 import './App.css';
 
 function Introduction() {
+
+  const CURSOR_CLASS_NAME = 'custom-type-animation-cursor';
   return (
     <>
       <section className='introduction'>
-          <TypeAnimation
+        <TypeAnimation
+          cursor={false}
+          className={CURSOR_CLASS_NAME}
           sequence={[
             1300,
-          'Hello, I am Anton!',
-          1000,
-          'Hello, I am Anton!\nThanks for visiting my page!',
+            'Hello, I am ',
           ]}
-          wrapper="div"
-          cursor={true}
+          wrapper="span"
           style={{ fontSize: '48px', fontWeight: "700", whiteSpace: "pre-line"}}
         />    
+
+        <TypeAnimation
+          sequence={[
+            2100,
+            'Anton!',
+          ]}
+          wrapper="span"
+          cursor={false}
+          style={{ fontSize: '48px', fontWeight: "700", whiteSpace: "pre-line", color:"#FF6500"}}
+        />    
+        <TypeAnimation
+          sequence={[
+            3000,
+            'Thanks for visiting my page!',
+          ]}
+          wrapper="div"
+          cursor={false}
+          style={{ fontSize: '48px', fontWeight: "700", whiteSpace: "pre-line"}}
+        />  
          
         <h2>Software developer from Sweden</h2>
         <p className='description'>Ever since I was a kid, my passion for gaming sparked a deeper interest in computers and programming. I pursued game development for three years in high school, which laid a solid foundation for my continued journey into .NET web development.</p>

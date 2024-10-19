@@ -60,7 +60,7 @@ h2{
     justify-content: space-evenly;
     gap: 4rem;
     .introduction{
-      max-width: 50%;
+      max-width: 55%;
     }
   }
 }
