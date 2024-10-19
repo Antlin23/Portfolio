@@ -4,6 +4,30 @@ body{
   padding-top: 32px;
   padding-bottom: 32px;
   font-size: 18px;
+  height: 100vh;
+}
+#root{
+  height: 100%;
+}
+
+.orange-color{
+  color: #FF6500;
+}
+.blue-color{
+  color: #0B192C;
+}
+
+.content{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  footer{
+    font-size: 14px;
+    color: #E0E4E8;
+    margin-top: 50px;
+  }
 }
 
 p{
@@ -24,6 +48,21 @@ h1{
 h2{
   font-size: 18px;
   margin-top: 16px;
+}
+
+.introduction-projects{
+  margin-top: 20px;
+}
+
+@media (min-width: 1200px) {
+  .introduction-projects{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4rem;
+    .introduction{
+      max-width: 50%;
+    }
+  }
 }
 
 .github-link{
@@ -61,15 +100,6 @@ h2{
       transform: scaleX(1.01);
     }
   }
-}
-
-footer{
-  text-align: center;
-  position: relative;
-  top: 20px;
-  font-size: 14px;
-  color: #E0E4E8;
-  margin-top: 50px;
 }
 
 

@@ -4,11 +4,13 @@ import Projects from './Projects';
 
 function App() {
   return (
-    <>
-      <Introduction />
-      <Projects />
-      <footer>Made by Anton | 2024</footer>
-    </>
+    <div className='content'>
+      <section className='introduction-projects container'>
+        <Introduction />
+        <Projects />
+      </section>
+        <footer>Made by Anton <span className='orange-color'>|</span> 2024</footer>
+    </div>
   );
 }
 
