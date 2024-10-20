@@ -1,15 +1,19 @@
 import './App.css';
 import Introduction from './Introduction';
 import Projects from './Projects';
+import Skills from './Skills';
 
 function App() {
   return (
     <div className='content'>
-      <section className='introduction-projects container'>
+      <section className='content--grid container'>
         <Introduction />
         <Projects />
+        <div className='content-skills'>
+          <Skills />
+        </div>
       </section>
-        <footer>Made by Anton <span className='orange-color'>|</span> 2024</footer>
+      <footer className='fixed container'>Made by <span className='footer-bold'>Anton</span> <span className='orange-color'>|</span> 2024</footer>
     </div>
   );
 }

@@ -5,15 +5,16 @@ interface IProject{
     "Title": string,
     "Description": string | undefined,
     "LinkSvg": React.ReactNode,
-    "Link": string
+    "Link": string,
+    "LinkText": string | undefined
 }
 
-const Project: React.FC<IProject> = ({Title, Description, LinkSvg, Link}) => {
+const Project: React.FC<IProject> = ({Title, Description, LinkSvg, Link, LinkText}) => {
   return (
     <div className='project'>
         <h4>{Title}</h4>
         <p>{Description}</p>
-        <a href={Link}>{LinkSvg}</a>
+        <a href={Link}>{LinkText} {LinkSvg}</a>
     </div>
   );
 }
