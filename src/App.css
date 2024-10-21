@@ -254,7 +254,8 @@ footer{
 
 /*Line divider*/
 .line-divider {
-  margin-bottom: 2px;
+  margin-bottom: 8px;
+  margin-top: 8px;
   --b: 1px;   /* control the border thickness */
   --w: 80px;  /* control the width of the line*/
   --g: 0px;  /* control the gap */
