@@ -59,6 +59,51 @@ h3{
   }
 }
 
+.dropdown{
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+}
+
+.wiggle{
+  animation: wiggle 2s linear infinite;
+}
+
+.rotate-360 {
+  transform: rotateX(0deg);
+  transition: transform 0.3s ease-in-out;
+}
+.rotate-180 {
+  transform: rotateX(180deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+
 .introduction{
   .introduction--title{
     line-height: 2.9rem;
