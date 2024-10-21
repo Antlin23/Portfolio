@@ -7,8 +7,6 @@ function Skills() {
   const [skillsText, setSkillsText] = useState("");
 
   const ToggleDropdown = (e: React.MouseEvent<HTMLButtonElement>) => {
-    console.log(e);
-
     e.currentTarget.classList.remove("wiggle");
 
     if(skillsDropdownIsOpen){
@@ -22,7 +20,7 @@ function Skills() {
   }
   return (
     <section className='skills container fixed'>
-        <h3 className='line-divider'>Skills<button onClick={(e) => ToggleDropdown(e)} className={`dropdown wiggle`}><i className={`fa-solid fa-chevron-down ${skillsDropdownIsOpen ? 'rotate-180' : 'rotate-360'}`} style={{ color: "#ffffff" }}></i>
+        <h3 className='line-divider'>Skills<button onClick={(e) => ToggleDropdown(e)} className={`dropdown wiggle`}><i className={`fa-solid fa-chevron-down ${skillsDropdownIsOpen ? 'rotate-180' : 'rotate-360'}`} style={{ color: "#E0E4E8" }}></i>
         </button></h3>
         <TypeAnimation
         key={skillsText}
