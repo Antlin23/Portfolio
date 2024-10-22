@@ -204,6 +204,7 @@ h3{
 /*Skills*/
 .skills{
   margin-top: 2.1rem;
+  padding-left: 0;
   text-align: start;
   width: 100%;
   li{
