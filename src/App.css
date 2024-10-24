@@ -152,6 +152,7 @@ h3{
   flex-direction: column;
   align-items: center;
   gap: 4px;
+  transition: all 150ms ease-in-out;
   a{
     color: #E0E4E8;
     display: block;
@@ -161,6 +162,28 @@ h3{
     transition: all ease-in-out 150ms;
     &:hover{
       background-color: #040a12;
+    }
+  }
+
+  .menu--circle{
+    color: #FF6500;
+    font-size: 12px;
+    display: none;
+    position: relative;
+    right: 23px;
+    top: 2px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #menu{
+    padding-left: 20px;
+    right: -56px;
+    .menu--circle{
+      display: block;
+    }
+    &:hover{
+      right: -14px;
     }
   }
 }
