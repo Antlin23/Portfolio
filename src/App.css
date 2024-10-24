@@ -114,6 +114,67 @@ h3{
   }
 }
 
+#themeIcon1{
+  position: fixed;
+  display: none;
+  max-width: 3rem;
+  left: 5rem;
+  top: 10rem;
+  animation: rotate-slow 3s infinite alternate ease-in-out; /* Add this line */
+}
+
+@media (min-width: 1600px) {
+  #themeIcon1{
+    display: block;
+}}
+
+#themeIcon2{
+  position: fixed;
+  display: none;
+  max-width: 4rem;
+  right: 5rem;
+  top: 10rem;
+  animation: ghost-float 3s infinite ease-in-out;
+  height: fit-content;
+}
+
+@media (min-width: 1600px) {
+  #themeIcon2{
+    display: block;
+}}
+
+@keyframes closeEye {
+  0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+    d: path("M172.483,217.034c-27.632,0-50.11,0-50.11,0s22.478,0,50.11,0c27.632,0,50.11,0,50.11,0 S200.115,217.034,172.483,217.034z");
+  }
+}
+
+#themeIcon2:hover #leftEye {
+  animation: closeEye 10s infinite;
+  transition: animation 0.3s ease; /* Add transition for smooth effect */
+}
+
+@keyframes ghost-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-13px);
+  }
+}
+
+@keyframes rotate-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+
 /* Keyframes */
 @keyframes wiggle {
   0%, 7% {
