@@ -2,14 +2,42 @@
 body{
   background-color: #000000;
   color: #E0E4E8;
-  padding-top: 32px;
+  padding-top: 12px;
   padding-bottom: 32px;
   font-size: 18px;
   height: 100vh;
   font-family: 'JetBrains Mono', monospace;
 }
+@media (min-width: 768px) {
+  body{
+    padding-top: 32px;
+
+  }
+}
 #root{
   height: 100%;
+}
+
+/*Animated underline*/
+.animated-link {
+  text-decoration: none;
+  position: relative;
+ }
+.animated-link::before, .animated-link::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  border-top-width: 2px;
+  border-top-color: #ffffff5f;
+}
+.animated-link::after {
+  border-top-style: solid;
+  width: 0;
+  transition: width .2s ease;
+}
+.animated-link:hover::after {
+  width: 100%;
 }
 
 .scrollable-section {
@@ -18,17 +46,9 @@ body{
 }
 
 .typetext{
-  font-size: 46px !important;
-}
-@media (min-width: 1200px) {
-  .typetext{
-    font-size: 30px !important;
-    word-spacing: -10px;  }
-}
-@media (min-width: 1720px) {
-  .typetext{
-    font-size: 46px !important;
-  }
+  font-size: 38px !important;
+  font-weight: 800 !important;
+  word-spacing: -10px;  
 }
 
 .orange-color{
@@ -72,20 +92,12 @@ h3{
   }
 }
 
-@media ((min-width: 1200px) and (max-height: 905px) ) {
+@media ((min-width: 1200px) and (max-height: 630px)) {
   .fixed{
     position: relative;
     max-width: 100%;
   }
 }
-
-@media ((min-width: 1200px) and (max-width: 1400px) ) {
-  .fixed{
-    position: relative;
-    max-width: 100%;
-  }
-}
-
 
 .dropdown{
   background-color: transparent;
@@ -106,12 +118,15 @@ h3{
   transition: transform 0.3s ease-in-out;
 }
 
-.orange-link{
+.orange-link{ 
   color: #FF6500;
   font-weight: 500;
   &:hover{
-    color: #ff6600a9;
+    color: #FF6500;
   }
+}
+.orange-link::before, .orange-link::after {
+  border-top-color: #FF6500;
 }
 
 #themeIcon1{
@@ -324,6 +339,27 @@ h3{
       margin-left: 4px;
     }
   }
+
+  .nav-slider{
+    button{
+      letter-spacing: -1px;
+      background-color: transparent;
+      color: #ffffff5f;
+      border: none;
+      transition: all 250ms ease-in-out;
+      font-size: 26px;
+    }
+    .nav-slider--active{
+      color: #E0E4E8;
+      font-size: 28px;
+    }
+    .nav-slider--active::before, .nav-slider--active::after {
+      border-top-color: #E0E4E8;
+    }
+    .nav-slider--projects{
+      margin-right: 1rem;
+    }
+  }
 }
 @media (min-width: 1200px) {
   #projects{
@@ -331,6 +367,11 @@ h3{
     padding-bottom: 4rem;
     margin-top: 0;
   }
+}
+
+
+.skills-slide{
+  min-height: 85vh;  
 }
 
 /*Skills*/
@@ -350,19 +391,21 @@ h3{
 }
 
 @media (min-width: 1200px) {
-  .content-skills{
+  .small-screen{
     display: none;
   }
 }
 
-.intro-skills{
+.large-screen{
   display: none;
 }
+
 @media (min-width: 1200px) {
-  .intro-skills{
+  .large-screen{
     display: block;
   }
 }
+
 
 footer{
   margin-top: 2rem;
@@ -400,4 +443,27 @@ footer{
         var(--c) 0 calc(50% + var(--b)/2),
         #0000    0) 
     1/0 var(--w)/calc(var(--w) + var(--g));
+}
+
+.nav-menu{
+  position: fixed;
+  right: 5rem;
+  top: 0rem;
+  margin: 0;
+  button{
+    font-weight: 500;
+    border: none;
+    padding: 0.3rem 1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    background-color:#0B192C;
+    color: white;
+    &:hover{
+      color: #FF6500;
+    }
+  }
+
+  .active{
+    color: #FF6500;
+  }
 }

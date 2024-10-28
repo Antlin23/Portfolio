@@ -1,11 +1,9 @@
 import './App.css';
 import Project from './Project';
 
-const Projects = () => {
+const RecentProjects = () => {
   return (
-      <section className='grid-item2' id='projects'>
-        <h3 className='line-divider'>Recent projects</h3>
-
+      <>
         <Project 
           Title='Panic button' 
           Description='Panic button for uppsala.se. Made with .NET Core and JavaScript.' 
@@ -45,8 +43,8 @@ const Projects = () => {
           Link='https://github.com/Antlin23/FleaMarket'
           LinkText=""
         />
-      </section>
+      </>
   );
 }
 
-export default Projects;
+export default RecentProjects;
