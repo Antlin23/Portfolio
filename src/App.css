@@ -138,9 +138,16 @@ h3{
   height: fit-content;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 768px) {
   #themeIcon2{
     display: block;
+    max-width: 3rem;
+    right: 2.5rem;
+}}
+
+@media (min-width: 1600px) {
+  #themeIcon2{
+    right: 5rem;
 }}
 
 @keyframes closeEye {
