@@ -8,7 +8,7 @@ interface IProject{
     "Link": string,
     "LinkText": string | undefined,
     "Image": string | undefined,
-    "ToolIcons": string[] | undefined 
+    "ToolIcons": { img: string; text: string }[] | undefined 
 }
 
 const Project: React.FC<IProject> = ({Title, Description, LinkSvg, Link, LinkText, Image, ToolIcons}) => {
@@ -20,11 +20,14 @@ const Project: React.FC<IProject> = ({Title, Description, LinkSvg, Link, LinkTex
         <a className='title orange-link' href={Link}>{Title}</a>
         <div className='project--tools'>
           {ToolIcons?.map((icon, index) => (
-              <img key={index} className='project--tool' src={icon} alt={`Tool icon ${index}`} />
+            <div className='project--tool'>
+              <img key={index} src={icon.img} alt={icon.text} />
+              <span>{icon.text}</span>
+            </div>
           ))}
         </div>
         <p className='project--description'>{Description}</p>
-        <a href={Link}>{LinkText} {LinkSvg}</a>
+        <a className='project--link' href={Link}>{LinkText} <i className="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
   );
