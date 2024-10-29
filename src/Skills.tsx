@@ -1,6 +1,6 @@
 import { TypeAnimation } from 'react-type-animation';
 import './App.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 function Skills() {
   const [skillsDropdownIsOpen, setskillsDropdownIsOpen] = useState(false);

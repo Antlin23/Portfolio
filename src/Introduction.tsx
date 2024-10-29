@@ -1,6 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
 import './App.css';
-import Skills from './Skills';
 
 function Introduction() {
 

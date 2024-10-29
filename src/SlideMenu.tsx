@@ -1,6 +1,5 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './App.css';
-import Project from './Project';
 import { TypeAnimation } from 'react-type-animation';
 import RecentProjects from './RecentProjects';
 
