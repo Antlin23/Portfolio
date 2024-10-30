@@ -1,4 +1,4 @@
-import './App.css';
+import './css/App.css';
 import RecentProjects from './RecentProjects';
 
 const ProjectsSmallScreen = () => {

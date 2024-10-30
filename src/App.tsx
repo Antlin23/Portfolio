@@ -1,4 +1,4 @@
-import './App.css';
+import './css/App.css';
 import Ghost from './Ghost';
 import Introduction from './Introduction';
 import Menu from './Menu';
@@ -21,7 +21,7 @@ function App() {
           <Projects />
           <Skills />
         </div>
-        
+
         <footer className='footer fixed container'>Made by <span className='footer-bold'>Anton</span> <span className='orange-color'>|</span> 2024</footer>
       </section>
 

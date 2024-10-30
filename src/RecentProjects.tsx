@@ -1,4 +1,4 @@
-import './App.css';
+import './css/App.css';
 import Project from './Project';
 //imgs
 import kulturnattenImg from './images/kulturnatten.png'

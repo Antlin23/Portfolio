@@ -1,5 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
-import './App.css';
+import './css/App.css';
 
 function Introduction() {
 
