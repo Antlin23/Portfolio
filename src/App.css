@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 body{
-  background-color: #000000;
+  background-color: #000;
   color: #E0E4E8;
   padding-top: 12px;
   padding-bottom: 32px;
@@ -492,7 +492,7 @@ h3{
 }
 
 
-footer{
+.footer{
   margin-top: 2rem;
   padding-bottom: 1rem;
   font-size: 14px;
@@ -502,9 +502,9 @@ footer{
   }
 }
 @media (min-width: 1200px) {
-  footer{
-    position: absolute;
-    bottom: 1px;
+  .footer{
+    position: fixed;
+    bottom: 14px;
     background-color: #000000;
     padding: 5px;
     width: fit-content !important;

@@ -21,9 +21,10 @@ function App() {
           <Projects />
           <Skills />
         </div>
+        
+        <footer className='footer fixed container'>Made by <span className='footer-bold'>Anton</span> <span className='orange-color'>|</span> 2024</footer>
       </section>
 
-      <footer className='fixed container'>Made by <span className='footer-bold'>Anton</span> <span className='orange-color'>|</span> 2024</footer>
       <Menu />
     </div>
   );
