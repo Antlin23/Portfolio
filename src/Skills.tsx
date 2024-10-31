@@ -25,7 +25,7 @@ function Skills() {
         <TypeAnimation
         key={skillsText}
             cursor={true}
-            speed={75}
+            speed={85}
             sequence={[
             `${skillsText}`,
             ]}

@@ -35,7 +35,7 @@ const SlideMenu = () => {
             <TypeAnimation
               key={skillsText}
                   cursor={true}
-                  speed={75}
+                  speed={95}
                   sequence={[
                   `${skillsText}`,
                   ]}

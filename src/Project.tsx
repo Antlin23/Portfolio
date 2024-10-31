@@ -13,7 +13,7 @@ interface IProject{
 
 const Project: React.FC<IProject> = ({Title, Description, LinkSvg, Link, LinkText, Image, ToolIcons}) => {
   return (
-    <div className='project'>
+    <a className='project'href={Link}>
       <img className='project--img' src={Image} alt={Title}></img>
 
       <div className='project--content'>
@@ -29,7 +29,7 @@ const Project: React.FC<IProject> = ({Title, Description, LinkSvg, Link, LinkTex
         <p className='project--description'>{Description}</p>
         <a className='project--link' href={Link}>{LinkText} <i className="fa-solid fa-arrow-right"></i></a>
       </div>
-    </div>
+    </a>
   );
 }
 
