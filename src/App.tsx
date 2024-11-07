@@ -10,7 +10,6 @@ function App() {
 
   return (
     <div className='content'>
-      <Ghost />
 
       <section className='content--grid container'>
         <Introduction />
