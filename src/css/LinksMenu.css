@@ -30,20 +30,18 @@
       font-size: 12px;
       display: none;
       position: relative;
-      right: 23px;
+      right: 14px;
       top: 2px;
     }
   }
   
+  
   @media (min-width: 1200px) {
     #menu{
-      padding-left: 20px;
-      right: -56px;
+      padding-left: 10px;
+      right: -24px;
       .menu--circle{
         display: block;
-      }
-      &:hover{
-        right: -14px;
       }
     }
   }
