@@ -262,6 +262,7 @@ h3{
     .project--description{
       color: #e0e4e8d2;
       word-spacing: -2px;
+      font-size: 14px;
     }
 
     @media (min-width: 1200px) {
