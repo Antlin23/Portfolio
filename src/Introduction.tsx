@@ -11,30 +11,32 @@ function Introduction() {
             cursor={false}
             className={CLASS_NAME}
             sequence={[
-              300, 
               'Hello, I am ',
             ]}
             wrapper="span"
+            speed={55}
             style={{ fontSize: '46px', fontWeight: "700", whiteSpace: "pre-line"}}
           />    
 
           <TypeAnimation
             sequence={[
-              1200, 
+              700, 
               'Anton!',
             ]}
             wrapper="span"
             cursor={false}
+            speed={55}
             className={CLASS_NAME}
             style={{ fontSize: '46px', fontWeight: "700", whiteSpace: "pre-line", color:"#FF6500"}}
           />    
           <TypeAnimation
             sequence={[
-              2000,
+              1100,
               'Thanks for visiting my page!',
             ]}
             wrapper="div"
             cursor={false}
+            speed={55}
             className={CLASS_NAME}
             style={{ fontSize: '46px', fontWeight: "700", whiteSpace: "pre-line"}}
           />  
