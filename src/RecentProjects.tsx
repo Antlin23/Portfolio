@@ -22,7 +22,7 @@ import mssqlLogo from './images/mssqlLogo.png'
 const RecentProjects = () => {
   var kulturnattenToolLogos: Array<{ img: string; text: string }> = [];
   kulturnattenToolLogos.push({ img: netLogo, text: ".NET" });
-  kulturnattenToolLogos.push({ img: cSharpLogo, text: "C#" });
+  kulturnattenToolLogos.push({ img: htmlLogo, text: "HTML" });
   kulturnattenToolLogos.push({ img: tailwindLogo, text: "TailWind" });
   kulturnattenToolLogos.push({ img: tsLogo, text: "TypeScript" });
   
