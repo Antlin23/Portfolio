@@ -31,22 +31,22 @@ function Introduction() {
           />    
           <TypeAnimation
             sequence={[
-              1100,
+              1200,
               'Thanks for visiting my page!',
             ]}
             wrapper="div"
             cursor={false}
             speed={55}
             className={CLASS_NAME}
-            style={{ fontSize: '46px', fontWeight: "700", whiteSpace: "pre-line"}}
+            style={{ fontSize: '46px', fontWeight: "700", whiteSpace: "pre-line", marginTop: "0.8rem"}}
           />  
         </div>
          
         <h2>Software developer from Sweden</h2>
-        <p className='description'>Ever since I was a kid, my passion for gaming sparked a deeper interest in computers and programming. I pursued game development in high school, which laid a solid foundation for my continued journey into .NET web development.</p>
-        <p>In my spare time, I enjoy working on game and app projects. You can explore some of my work on <a className='animated-link orange-link' href='https://github.com/Antlin23?tab=repositories'>GitHub!</a>
+        <p className='description'>Ever since I was a kid, my passion for gaming sparked a deeper interest in computers. I pursued game development in high school, which laid a solid foundation for my continued journey into .NET web development.</p>
+        <p>In my spare time, I enjoy working on app projects. You can explore some of my work on <a className='animated-link orange-link' href='https://github.com/Antlin23?tab=repositories'>GitHub!</a>
         </p>
-        <p>Feel free to reach out!</p>
+        <p>Always feel free to reach out!</p>
       </section>
   );
 }
