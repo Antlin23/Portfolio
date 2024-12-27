@@ -1,3 +1,63 @@
+.quote-modal{
+  color: #E0E4E8;
+}
+.quote-modal-part{
+  background-color: #0B192C;
+}
+.modal-content{
+  background-color: #0B192C;
+  padding: 1rem 0.8rem;
+  .btn-close{
+    background-color: #E0E4E8;
+    padding: 8px;
+  }
+  .modal-header{
+    border: none;
+    text-decoration: 1px underline;
+    text-underline-offset: 3px;
+    font-size: 14px;
+  }
+  .modal-body{
+    font-weight: 200;
+    font-size: 1.1rem;
+    font-style: italic;
+    .small{
+      color: #e0e4e890;
+      font-style: normal;
+
+    }
+  }
+  .modal-title{
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: 300;
+    word-spacing: -3px;
+    .question{
+      position: absolute;
+      font-size: 14px;
+      right: -22px;
+    }
+  }
+  .question:hover + .info{
+    opacity: 1;
+  }
+
+  .info{
+    z-index: 2;
+    opacity: 0;
+    background-color: #040a12;
+    border: 1px solid #e0e4e881;
+    position: absolute;
+    right: -1rem;
+    width: 15rem;
+    top: -8rem;
+    padding: 1rem;
+    font-size: 14px;
+    border-radius: 8px;
+    transition: all 200ms ease-in-out;
+  }
+}
+
 #menu{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     position: fixed;
@@ -13,7 +73,9 @@
     gap: 4px;
     transition: all 150ms ease-in-out;
     z-index: 900;
-    a{
+
+    a, .menu--openmodal{
+      background-color: transparent;
       position: relative;
       color: #E0E4E8;
       display: block;
@@ -21,13 +83,14 @@
       padding: 4px 8px;
       border-radius: 8px;
       transition: all ease-in-out 150ms;
+      border: none;
       &:hover{
         background-color: #040a12;
       }
       .menu--popup{
         position: absolute;
         font-size: 12px;
-        background-color: rgba(255, 102, 0, 0.681);
+        background-color: rgb(192, 80, 5);
         right: 55px;
         padding: 0.4rem 0.8rem;
         font-weight: 200;
@@ -35,6 +98,8 @@
         opacity: 0;
         transition: all 150ms ease-in-out;
         pointer-events: none;
+        width: fit-content;
+        white-space: nowrap;
       }
       &:hover .menu--mailPopup{
         opacity: 1;
@@ -43,6 +108,9 @@
         opacity: 1;
       }
       &:hover .menu--gitHubPopup{
+        opacity: 1;
+      }
+      &:hover .menu--quotePopup{
         opacity: 1;
       }
     }

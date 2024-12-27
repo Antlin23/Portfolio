@@ -427,7 +427,7 @@ h3{
     border-radius: 1rem;
     margin: 1rem;
     background-color:#0B192C;
-    color: white;
+    color: #E0E4E8;
     &:hover{
       color: #FF6500;
     }
