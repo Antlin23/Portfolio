@@ -31,7 +31,7 @@ function Menu() {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body className=''>
-          "Action cures fear"
+          "To think confidently, act confidently"
           <p className='small'>-The magic of thinking big, David J. Schwartz</p>
           </Modal.Body>
       </Modal>
@@ -40,3 +40,9 @@ function Menu() {
   );
 }
 export default Menu;
+
+
+/* 
+"Action cures fear"
+<p className='small'>-The magic of thinking big, David J. Schwartz</p>
+*/
