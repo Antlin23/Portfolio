@@ -21,7 +21,7 @@ function App() {
           <Skills />
         </div>
 
-        <footer className='footer fixed container'>Made by <span className='footer-bold'>Anton</span> <span className='orange-color'>|</span> 2024</footer>
+        <footer className='footer fixed container'>Made by <span className='footer-bold'>Anton</span> <span className='orange-color'>|</span> 2025</footer>
       </section>
 
       <Menu />
