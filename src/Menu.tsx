@@ -31,8 +31,8 @@ function Menu() {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body className=''>
-          "How big we think determines the size of our accomplishments"
-          <p className='small'>-The magic of thinking big, David J. Schwartz</p>
+        "Action cures fear"
+        <p className='small'>-The magic of thinking big, David J. Schwartz</p>
           </Modal.Body>
       </Modal>
       </div>
