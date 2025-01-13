@@ -3,6 +3,9 @@
 @import "./Footer.css";
 
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+*{
+  scrollbar-color: #0B192C transparent;
+}
 body{
   background-color: #000;
   color: #E0E4E8;
