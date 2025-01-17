@@ -9,6 +9,9 @@ const SlideMenu = () => {
   const showSkills = () => {
     document.querySelector('.skills-slide')?.classList.remove('d-none');
     document.querySelector('.projects-slide')?.classList.add('d-none');
+    document.querySelector('.projects-slide')?.classList.remove('show');
+
+
     document.querySelector(".nav-slider--skills")?.classList.add("nav-slider--active");
     document.querySelector(".nav-slider--projects")?.classList.remove("nav-slider--active");
 
@@ -16,7 +19,10 @@ const SlideMenu = () => {
   }
   const showProjects = () => {
     document.querySelector('.projects-slide')?.classList.remove('d-none');
+    document.querySelector('.projects-slide')?.classList.add('show');
+
     document.querySelector('.skills-slide')?.classList.add('d-none');  
+
     document.querySelector(".nav-slider--projects")?.classList.add("nav-slider--active");
     document.querySelector(".nav-slider--skills")?.classList.remove("nav-slider--active");
 

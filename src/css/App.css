@@ -224,6 +224,24 @@ h3{
   }
 }
 
+
+
+@keyframes slideInProject {
+  from {
+    transform: translateX(0px); 
+  }
+  to {
+    transform: translateX(-16px);
+  }
+}
+@keyframes slideOutProject {
+  from {
+    transform: translateX(-16px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
 #projects{
   margin-top: 3rem;
   h3{
@@ -342,6 +360,13 @@ h3{
         background-color: #e0e4e8d1;
       }
     }
+    &:hover{
+      animation: slideInProject 0.3s ease forwards;
+    }
+    &:not(:hover) {
+      animation: slideOutProject 0.3s ease forwards;
+    }
+    
   }
 
   @media (min-width: 1200px) {
@@ -398,6 +423,27 @@ h3{
     margin-top: 1rem;
   }
 }
+
+
+
+@keyframes slideIn {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(16px);
+  }
+}
+
+.projects-slide{
+  transition: all ease-out 250ms;
+}
+.projects-slide.show{
+  animation: slideIn 0.5s ease forwards;
+}
+
+
+
 
 /*Line divider*/
 .line-divider {
