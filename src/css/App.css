@@ -226,22 +226,6 @@ h3{
 
 
 
-@keyframes slideInProject {
-  from {
-    transform: translateX(0px); 
-  }
-  to {
-    transform: translateX(-16px);
-  }
-}
-@keyframes slideOutProject {
-  from {
-    transform: translateX(-16px);
-  }
-  to {
-    transform: translateX(0px);
-  }
-}
 #projects{
   margin-top: 3rem;
   h3{
@@ -360,13 +344,6 @@ h3{
         background-color: #e0e4e8d1;
       }
     }
-    &:hover{
-      animation: slideInProject 0.3s ease forwards;
-    }
-    &:not(:hover) {
-      animation: slideOutProject 0.3s ease forwards;
-    }
-    
   }
 
   @media (min-width: 1200px) {
@@ -428,10 +405,10 @@ h3{
 
 @keyframes slideIn {
   from {
-    transform: translateX(0px);
+    transform: translateX(16px);
   }
   to {
-    transform: translateX(16px);
+    transform: translateX(0px);
   }
 }
 
