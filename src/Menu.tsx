@@ -31,7 +31,7 @@ function Menu() {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body className=''>
-        "Concentrate on important things"
+        "When you believe something can be done, your mind will find the ways to do it."
         <p className='small'>-The magic of thinking big, David J. Schwartz</p>
           </Modal.Body>
       </Modal>
@@ -43,10 +43,8 @@ export default Menu;
 
 
 /* 
-"Action cures fear"
-<p className='small'>-The magic of thinking big, David J. Schwartz</p>
-
+        "Action cures fear"
         "To do anything, we must first believe it can be done."
         "To think confidently, act confidently"
-        <p className='small'>-The magic of thinking big, David J. Schwartz</p>
+        "Concentrate on important things"
 */
