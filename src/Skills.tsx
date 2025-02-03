@@ -15,7 +15,7 @@ function Skills() {
     }
     else{
       setskillsDropdownIsOpen(true);
-      setSkillsText("• ASP.NET Core\n• C# & Java\n• JavaScript & TypeScript\n• Tailwind & Bootstrap\n• React.js\n• SQL\n• EpiServer & Umbraco\n• API\n• WCAG & accessibility\n• Entity framework");
+      setSkillsText("• ASP.NET Core\n• C#\n• JavaScript & TypeScript\n• Tailwind & Bootstrap\n• React.js\n• SQL\n• EpiServer & Umbraco\n• API\n• WCAG & accessibility\n• Entity framework");
     }
   }
   return (

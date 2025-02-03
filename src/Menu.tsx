@@ -31,7 +31,7 @@ function Menu() {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body className=''>
-        "When you believe something can be done, your mind will find the ways to do it."
+        "Action cures fear"
         <p className='small'>-The magic of thinking big, David J. Schwartz</p>
           </Modal.Body>
       </Modal>
