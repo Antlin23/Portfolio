@@ -10,10 +10,12 @@
   background-color: #0B192C;
   padding: 1rem 0.8rem;
 }
+
 .modal-content .btn-close {
   background-color: #E0E4E8;
   padding: 8px;
 }
+
 .modal-content .modal-header {
   border: none;
   -webkit-text-decoration: 1px underline;
@@ -21,34 +23,40 @@
   text-underline-offset: 3px;
   font-size: 14px;
 }
+
 .modal-content .modal-body {
   font-weight: 200;
   font-size: 1.1rem;
   font-style: italic;
 }
+
 .modal-content .modal-body .small {
-  color: rgba(224, 228, 232, 0.5647058824);
+  color: #e0e4e890;
   font-style: normal;
 }
+
 .modal-content .modal-title {
   position: relative;
   font-size: 1.4rem;
   font-weight: 300;
   word-spacing: -3px;
 }
+
 .modal-content .modal-title .question {
   position: absolute;
   font-size: 14px;
   right: -22px;
 }
+
 .modal-content .question:hover + .info {
   opacity: 1;
 }
+
 .modal-content .info {
   z-index: 2;
   opacity: 0;
   background-color: #040a12;
-  border: 1px solid rgba(224, 228, 232, 0.5058823529);
+  border: 1px solid #e0e4e881;
   position: absolute;
   right: -1rem;
   width: 15rem;
@@ -56,11 +64,13 @@
   padding: 1rem;
   font-size: 14px;
   border-radius: 8px;
+  -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
 
 #menu {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   position: fixed;
   right: -26px;
   bottom: 6.3rem;
@@ -68,13 +78,22 @@
   padding: 6px;
   padding-right: 2rem;
   border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 4px;
+  -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
   z-index: 900;
 }
+
 #menu a, #menu .menu--openmodal {
   background-color: transparent;
   position: relative;
@@ -83,50 +102,73 @@
   font-size: 22px;
   padding: 4px 8px;
   border-radius: 8px;
+  -webkit-transition: all ease-in-out 150ms;
   transition: all ease-in-out 150ms;
   border: none;
 }
+
 #menu a:hover, #menu .menu--openmodal:hover {
   background-color: #040a12;
 }
+
 #menu a .menu--popup, #menu .menu--openmodal .menu--popup {
   position: absolute;
   font-size: 12px;
-  background-color: rgb(192, 80, 5);
+  background-color: #c05005;
   right: 55px;
   padding: 0.4rem 0.8rem;
   font-weight: 200;
   border-radius: 10px;
   opacity: 0;
+  -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
   pointer-events: none;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   white-space: nowrap;
 }
+
 #menu a:hover .menu--mailPopup, #menu .menu--openmodal:hover .menu--mailPopup {
   opacity: 1;
 }
+
 #menu a:hover .menu--linkedInPopup, #menu .menu--openmodal:hover .menu--linkedInPopup {
   opacity: 1;
 }
+
 #menu a:hover .menu--gitHubPopup, #menu .menu--openmodal:hover .menu--gitHubPopup {
   opacity: 1;
 }
+
 #menu a:hover .menu--quotePopup, #menu .menu--openmodal:hover .menu--quotePopup {
   opacity: 1;
 }
 
 /*Slide effect*/
-@keyframes slideInFromRight {
+@-webkit-keyframes slideInFromRight {
   0% {
-    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
+@keyframes slideInFromRight {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 #menu {
   /* This section calls the slideInFromLeft animation we defined above */
-  animation: 2s ease-out 0s 1 slideInFromRight;
-}/*# sourceMappingURL=LinksMenu.css.map */
+  -webkit-animation: 2s ease-out 0s 1 slideInFromRight;
+          animation: 2s ease-out 0s 1 slideInFromRight;
+}

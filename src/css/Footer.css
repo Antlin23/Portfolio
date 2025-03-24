@@ -4,6 +4,7 @@
   font-size: 14px;
   color: #E0E4E8;
 }
+
 .footer .footer-bold {
   font-weight: 700;
 }
@@ -12,9 +13,9 @@
   .footer {
     position: fixed;
     bottom: 14px;
-    background-color: #000000;
     padding: 5px;
+    width: -webkit-fit-content !important;
     width: -moz-fit-content !important;
     width: fit-content !important;
   }
-}/*# sourceMappingURL=Footer.css.map */
+}
