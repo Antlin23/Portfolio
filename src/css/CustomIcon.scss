@@ -1,0 +1,45 @@
+
+    #themeIcon{
+    position: fixed;
+    display: none;
+    max-width: 4rem;
+    right: 5rem;
+    top: 10rem;
+    animation: ghost-float 3s infinite ease-in-out;
+    height: fit-content;
+    z-index: 99;
+  }
+  
+  @media (min-width: 768px) {
+    #themeIcon{
+      /*to show Ghost, display block here*/
+      display: block; 
+      max-width: 3rem;
+      right: 2.5rem;
+  }}
+  
+  @media (min-width: 1600px) {
+    #themeIcon{
+      right: 5rem;
+  }}
+  
+  #themeIcon:hover #leftEye {
+    animation: closeEye 10s infinite;
+    transition: animation 0.3s ease; /* Add transition for smooth effect */
+  }
+
+    
+  @keyframes closeEye {
+    0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+      d: path("M172.483,217.034c-27.632,0-50.11,0-50.11,0s22.478,0,50.11,0c27.632,0,50.11,0,50.11,0 S200.115,217.034,172.483,217.034z");
+    }
+  }
+  
+  @keyframes ghost-float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-13px);
+    }
+  }
