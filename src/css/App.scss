@@ -3,7 +3,7 @@
 @import "./Footer.css";
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
-//SCROLLBAR 
+//SCROLLBAR  
 ::-webkit-scrollbar {
   width: 10px; 
 }
@@ -12,10 +12,10 @@
 }
 ::-webkit-scrollbar-thumb {
   background: #0B192C; 
-  border-radius: 3px;
+  border-radius: 3px; 
 }
 ::-webkit-scrollbar-track-piece {
-  background: #313131;
+  background: #313131; 
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #1A2A40;
