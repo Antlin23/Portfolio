@@ -2,7 +2,7 @@ import { TypeAnimation } from 'react-type-animation';
 import './css/App.css';
 import { useState } from 'react';
 
-function Skills() {
+function Skills({ skillsImportedText }: { skillsImportedText: string }) {
   const [skillsDropdownIsOpen, setskillsDropdownIsOpen] = useState(false);
   const [skillsText, setSkillsText] = useState("");
 
@@ -15,7 +15,7 @@ function Skills() {
     }
     else{
       setskillsDropdownIsOpen(true);
-      setSkillsText("• ASP.NET Core\n• C#\n• JavaScript & TypeScript\n• Tailwind & Bootstrap\n• React.js\n• SQL\n• EpiServer & Umbraco\n• API\n• WCAG & accessibility\n• Entity framework");
+      setSkillsText(skillsImportedText);
     }
   }
   return (

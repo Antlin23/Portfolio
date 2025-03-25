@@ -3,8 +3,8 @@ import './css/App.css';
 import { TypeAnimation } from 'react-type-animation';
 import RecentProjects from './RecentProjects';
 
-const SlideMenu = () => {
-  const [skillsText, setSkillsText] = useState("");
+const SlideMenu = ({ skillsImportedText }: { skillsImportedText: string }) => {
+  const [skillsText, setSkillsText] = useState(skillsImportedText);
 
   const showSkills = () => {
     document.querySelector('.skills-slide')?.classList.remove('d-none');
@@ -15,7 +15,7 @@ const SlideMenu = () => {
     document.querySelector(".nav-slider--skills")?.classList.add("nav-slider--active");
     document.querySelector(".nav-slider--projects")?.classList.remove("nav-slider--active");
 
-    setSkillsText("• ASP.NET Core\n• C#\n• JavaScript & TypeScript\n• Tailwind & Bootstrap\n• React.js\n• SQL\n• EpiServer & Umbraco\n• API\n• WCAG & accessibility\n• Entity framework");
+    setSkillsText(skillsImportedText);
   }
   const showProjects = () => {
     document.querySelector('.projects-slide')?.classList.remove('d-none');
