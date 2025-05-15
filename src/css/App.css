@@ -28,17 +28,10 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(#050505), to(#1b1b1b));
   background: linear-gradient(90deg, #050505 0%, #1b1b1b 100%);
   color: #E0E4E8;
-  padding-top: 12px;
   padding-bottom: 32px;
   font-size: 18px;
   height: 100vh;
   font-family: 'JetBrains Mono', monospace;
-}
-
-@media (min-width: 768px) {
-  body {
-    padding-top: 32px;
-  }
 }
 
 #root {
@@ -251,6 +244,14 @@ h3 {
   }
 }
 
+.project-skils-section {
+  padding-top: 44px;
+}
+
+.introduction {
+  margin-top: 44px;
+}
+
 .introduction .introduction--title {
   line-height: 2.9rem;
   margin-bottom: 3rem;
@@ -281,10 +282,6 @@ h3 {
   .introduction {
     max-width: 600px;
   }
-}
-
-.content--grid {
-  margin-top: 20px;
 }
 
 @media (min-width: 1200px) {
@@ -493,7 +490,7 @@ h3 {
 }
 
 .skills-slide {
-  min-height: 85vh;
+  min-height: 90vh;
 }
 
 /*Skills*/
