@@ -10,3 +10,10 @@
   z-index: 0;
   opacity: 0;
 }
+
+@media (max-width: 1200px) {
+  .mouse-effect {
+    mask-image: radial-gradient(circle 0px, black 100%) !important;
+    -webkit-mask-image: radial-gradient(circle 0px, black 100%) !important;
+  }
+}
