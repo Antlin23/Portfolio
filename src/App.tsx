@@ -6,8 +6,7 @@ import Projects from './ProjectsSmallScreen';
 import ProjectsSlide from './SlideMenu';
 import Skills from './Skills';
 import { useState, useEffect } from 'react';
-import MouseEffect from './components/MouseEffect';
-import bgImage from './images/rndomCode2.png';
+import MouseEffect from './MouseEffect';
 
 function App() {
   const [skillsText, setSkillsText] = useState("");
@@ -17,32 +16,12 @@ function App() {
   }, [])
   
   return (
-    <div className='content' style={{
-      backgroundImage: `url(${bgImage})`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundAttachment: 'fixed',
-      backgroundRepeat: 'no-repeat',
-      minHeight: '100vh',
-      position: 'relative',
-    }}>
-      <div style={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        zIndex: 0,
-        pointerEvents: 'none',
-      }}>
+    <div className='content'>
+      <div className='content-background'>
         <MouseEffect />
       </div>
 
-      <section className='content--grid container' style={{
-        position: 'relative',
-        zIndex: 1,
-        backgroundColor: 'transparent',
-      }}>
+      <section className='content--grid container'>
         <Introduction />
 
         <div className='large-screen project-skils-section' id='projects'>

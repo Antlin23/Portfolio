@@ -1,9 +1,10 @@
 @import "./CustomIcon.css";
 @import "./LinksMenu.css";
 @import "./Footer.css";
+@import "./MouseEffect.css";
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
-//SCROLLBAR  
+//SCROLLBAR 
 ::-webkit-scrollbar {
   width: 10px; 
 }
@@ -33,6 +34,39 @@ body{
 
 #root{
   height: 100%;
+}
+
+.content{
+  background-image: url(../images/rndomCode2.png);
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+
+  .content-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .content--grid{
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+  }
+  @media (min-width: 1200px) {
+    .content--grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      grid-row: auto auto;
+      gap: 2rem;
+      row-gap: 0;
+    }
+  }
 }
 
 /*Animated underline*/
@@ -221,17 +255,6 @@ h3{
 @media (min-width: 1400px) {
   .introduction{
     max-width: 600px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .content--grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-row: auto auto;
-    gap: 2rem;
-    row-gap: 0;
   }
 }
 

@@ -28,16 +28,8 @@ const MouseEffect = () => {
   }, []);
 
   return (
-    <div
+    <div className='mouse-effect'
       style={{
-        position: 'fixed',
-        left: 0,
-        top: 0,
-        width: '100vw',
-        height: '100vh',
-        background: 'linear-gradient(90deg, #050505 0%, #1b1b1b 100%)',  
-        pointerEvents: 'none',
-        zIndex: 0,
         maskImage: `radial-gradient(circle 80px at ${position.x}px ${position.y}px, transparent 0%, black 100%)`,
         WebkitMaskImage: `radial-gradient(circle 80px at ${position.x}px ${position.y}px, transparent 0%, black 100%)`,
         opacity: isVisible ? 1 : 0,
