@@ -1,6 +1,7 @@
-@import "./CustomIcon.css";
-@import "./LinksMenu.css";
-@import "./Footer.css";
+@import url(c:\Users\anton\OneDrive\Skrivbord\programming\portfolio\src\css\CustomIcon.css);
+@import url(c:\Users\anton\OneDrive\Skrivbord\programming\portfolio\src\css\LinksMenu.css);
+@import url(c:\Users\anton\OneDrive\Skrivbord\programming\portfolio\src\css\Footer.css);
+@import url(c:\Users\anton\OneDrive\Skrivbord\programming\portfolio\src\css\MouseEffect.css);
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 ::-webkit-scrollbar {
   width: 10px;
@@ -36,6 +37,46 @@ body {
 
 #root {
   height: 100%;
+}
+
+.content {
+  background-image: url(../images/rndomCode2.png);
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+}
+
+.content .content-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.content .content--grid {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+}
+
+@media (min-width: 1200px) {
+  .content .content--grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    grid-row: auto auto;
+    gap: 2rem;
+    row-gap: 0;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+  }
 }
 
 /*Animated underline*/
@@ -281,20 +322,6 @@ h3 {
 @media (min-width: 1400px) {
   .introduction {
     max-width: 600px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .content--grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: auto auto;
-        grid-template-rows: auto auto;
-    grid-row: auto auto;
-    gap: 2rem;
-    row-gap: 0;
   }
 }
 

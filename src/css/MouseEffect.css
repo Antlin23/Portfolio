@@ -1,0 +1,12 @@
+.mouse-effect {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, color-stop(100%, #05050500), color-stop(0%, #1b1b1b00));
+  background: linear-gradient(90deg, #05050500 100%, #1b1b1b00 0%);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+}
