@@ -73,9 +73,6 @@ body {
     grid-row: auto auto;
     gap: 2rem;
     row-gap: 0;
-    position: relative;
-    z-index: 1;
-    background-color: transparent;
   }
 }
 
