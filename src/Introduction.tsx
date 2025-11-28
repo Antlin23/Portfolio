@@ -43,10 +43,9 @@ function Introduction() {
         </div>
          
         <h2>Software developer from Sweden</h2>
-        <p className='description'>Ever since I was a kid, my passion for gaming sparked a deeper interest in computers. I pursued game development in high school, which laid a solid foundation for my continued journey into .NET web development.</p>
-        <p>In my spare time, I enjoy working on app projects. You can explore some of my work on <a className='animated-link orange-link' href='https://github.com/Antlin23?tab=repositories'>GitHub!</a>
+        <p className='description'>I pursued game development in high school, which laid a solid foundation for my continued journey into .NET and Java web development.</p>
+        <p>In my spare time, I also work on applications. You can explore some of my work on <a className='animated-link orange-link' href='https://github.com/Antlin23?tab=repositories'>GitHub!</a>
         </p>
-        <p>Always feel free to reach out!</p>
       </section>
   );
 }
