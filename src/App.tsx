@@ -33,7 +33,7 @@ function App() {
           <Skills skillsImportedText={skillsText}/>
         </div>
 
-        <footer className='footer fixed container'>Made by <span className='footer-bold'>Anton</span> <span className='orange-color'>|</span> 2025</footer>
+        <footer className='footer fixed container'>Made by <span className='footer-bold'>Anton</span> <span className='orange-color'>|</span> 2026</footer>
       </section>
 
       <Menu />
