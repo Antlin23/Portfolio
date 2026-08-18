@@ -3,21 +3,15 @@ import Project from './Project';
 //imgs
 import kulturnattenImg from './images/kulturnatten.png'
 import adventOfCodeIMG from './images/adventOfCodeIMG.png'
-import flutterNamerImg from './images/flutterNamer.png'
 import fixoImg from './images/fixo.png'
 import ovldcars from './images/ovldcars.jpg'
-import devnest from './images/devsnest2.png'
 import sakoban from './images/sakobanGame.png'
 
 
 //tool icons
-import flutterLogo from './images/flutterLogo.png'
-import dartLogo from './images/dartLogo.png'
 import netLogo from './images/netLogo.png'
-import jsLogo from './images/jsLogo.png'
 import tsLogo from './images/tsLogo.png'
 import htmlLogo from './images/htmlLogo.png'
-import cssLogo from './images/cssLogo.png'
 import tailwindLogo from './images/tailwindLogo.png'
 import cSharpLogo from './images/Csharp_Logo.png'
 import swishLogo from './images/swishLogo.png'
@@ -26,6 +20,18 @@ import mssqlLogo from './images/mssqlLogo.png'
 import luaLogo from './images/lua.png'
 import angularLogo from './images/angularLogo.png'
 import unityLogo from './images/unityLogo.png'
+
+
+/*//NOT IN USE IMPORTS
+import flutterLogo from './images/flutterLogo.png'
+import dartLogo from './images/dartLogo.png'
+import cssLogo from './images/cssLogo.png'
+import jsLogo from './images/jsLogo.png'
+import devnest from './images/devsnest2.png'
+import flutterNamerImg from './images/flutterNamer.png'
+*/
+
+
 
 
 const RecentProjects = () => {

@@ -1,12 +1,13 @@
-import { useCallback, useEffect, useState } from 'react';
+//import { useCallback, useEffect, useState } from 'react';
 import './css/App.css';
 
-import Modal from 'react-bootstrap/Modal';
+//import Modal from 'react-bootstrap/Modal';
 
 function Menu() {
-  const [show, setShow] = useState(false);
+  /*const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  */
 
   return (
       <div id='menu'>

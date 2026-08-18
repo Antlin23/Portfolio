@@ -1,5 +1,4 @@
 import './css/App.css';
-import Ghost from './Ghost';
 import Introduction from './Introduction';
 import Menu from './Menu';
 import Projects from './ProjectsSmallScreen';
