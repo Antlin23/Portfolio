@@ -11,7 +11,7 @@ function App() {
   const [skillsText, setSkillsText] = useState("");
 
   useEffect(() => {
-    setSkillsText("• ASP.NET Core\n• C# & Java\n• JavaScript & TypeScript\n• Tailwind & Bootstrap\n• React.js & Angular\n• HTML & CSS\n• SQL\n• EpiServer & Umbraco\n• REST API\n• WCAG & accessibility\n• Entity framework");
+    setSkillsText("• ASP.NET Core\n• Spring Boot, Vaadin & Quarkus\n• C# & Java OOP\n• CI/CD, Tekton Pipelines\n• JavaScript/TypeScript\n• Tailwind & Bootstrap\n• React & Angular\n• HTML & CSS\n• SQL\n• EpiServer CMS\n• WCAG & accessibility");
   }, [])
   
   return (
