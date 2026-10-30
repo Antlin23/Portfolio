@@ -47,7 +47,6 @@ const RecentProjects = () => {
   kulturnattenToolLogos.push({ img: tsLogo, text: "TypeScript" });
   
   var aocToolLogos: Array<{ img: string; text: string }> = [];
-  aocToolLogos.push({ img: cSharpLogo, text: "C#" });
     aocToolLogos.push({ img: cSharpLogo, text: "C#" });
 
 
