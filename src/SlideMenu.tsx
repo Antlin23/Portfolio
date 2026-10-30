@@ -1,10 +1,12 @@
 import { useState } from 'react';
-import './css/App.css';
 import { TypeAnimation } from 'react-type-animation';
 import RecentProjects from './RecentProjects';
+import Certificates from './Certificates';
 
 const SlideMenu = ({ skillsImportedText }: { skillsImportedText: string }) => {
-  const [skillsText, setSkillsText] = useState(skillsImportedText);
+  const [skillsText, setSkillsText] = useState("");
+  const [animationRun, setAnimationRun] = useState(0);
+  const [certificatesVisible, setCertificatesVisible] = useState(false);
 
   const showSkills = () => {
     document.querySelector('.skills-slide')?.classList.remove('d-none');
@@ -15,6 +17,8 @@ const SlideMenu = ({ skillsImportedText }: { skillsImportedText: string }) => {
     document.querySelector(".nav-slider--skills")?.classList.add("nav-slider--active");
     document.querySelector(".nav-slider--projects")?.classList.remove("nav-slider--active");
 
+    setCertificatesVisible(false);
+    setAnimationRun((run) => run + 1);
     setSkillsText(skillsImportedText);
   }
   const showProjects = () => {
@@ -26,6 +30,7 @@ const SlideMenu = ({ skillsImportedText }: { skillsImportedText: string }) => {
     document.querySelector(".nav-slider--projects")?.classList.add("nav-slider--active");
     document.querySelector(".nav-slider--skills")?.classList.remove("nav-slider--active");
 
+    setCertificatesVisible(false);
     setSkillsText("");
   }
 
@@ -38,16 +43,18 @@ const SlideMenu = ({ skillsImportedText }: { skillsImportedText: string }) => {
 
         <div>
           <div className='skills-slide d-none'>
-            <TypeAnimation
-              key={skillsText}
-                  cursor={true}
-                  speed={95}
-                  sequence={[
-                  `${skillsText}`,
-                  ]}
-                  wrapper="span"
-                  style={{ fontSize: '18px', whiteSpace: "pre-line"}}
-            />           
+            {skillsText && <TypeAnimation
+              key={`${skillsText}-${animationRun}`}
+              cursor={true}
+              speed={95}
+              sequence={[
+                skillsText,
+                () => setCertificatesVisible(true),
+              ]}
+              wrapper="span"
+              style={{ fontSize: '18px', whiteSpace: "pre-line"}}
+            />}
+            {certificatesVisible && <Certificates />}
           </div>
           <div className='projects-slide'>
                 <RecentProjects />
