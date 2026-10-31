@@ -43,9 +43,13 @@ function Introduction() {
         </div>
          
         <h2>Software developer from Sweden</h2>
-        <p className='description'>I pursued game development in high school, which laid a solid foundation for my continued journey into .NET and Java web development.</p>
-        <p>In my spare time, I also work on applications. You can explore some of my work on <a className='animated-link orange-link' href='https://github.com/Antlin23?tab=repositories'>GitHub!</a>
-        </p>
+
+        <p className='description'>I focus on continuous learning and delivering with high standards while adapting to the user's needs.</p>
+        <p>I have expertise in complex microservices architecture using modern technologies. My focus has mainly been full-stack Java, Spring Boot, and Angular microservices with CI/CD workflows.</p>
+        <p>I have also worked with a broad range of other technologies like .NET Core, Flutter, C#, and Lua.</p>
+        
+        <p>Feel free to explore some of my hobby projects on <a className='animated-link orange-link' href='https://github.com/Antlin23?tab=repositories'>GitHub.</a></p>
+
       </section>
   );
 }
