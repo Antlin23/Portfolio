@@ -42,12 +42,12 @@ const RecentProjects = () => {
   var afToolLogos: Array<{ img?: string; text: string }> = [];
   afToolLogos.push({ img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg", text: "Java" });
   afToolLogos.push({ img: "https://cdn.simpleicons.org/spring", text: "Spring Boot" });
-  afToolLogos.push({ img: "https://cdn.simpleicons.org/angular", text: "Angular" });
+  afToolLogos.push({ img: angularLogo, text: "Angular" });
   afToolLogos.push({ img: "https://cdn.simpleicons.org/tekton", text: "Tekton CI/CD" });
 
   var kulturnattenToolLogos: Array<{ img: string; text: string }> = [];
   kulturnattenToolLogos.push({ img: netLogo, text: ".NET" });
-  kulturnattenToolLogos.push({ img: htmlLogo, text: "HTML" });
+  kulturnattenToolLogos.push({ img: cSharpLogo, text: "C#" });
   kulturnattenToolLogos.push({ img: tailwindLogo, text: "TailWind" });
   kulturnattenToolLogos.push({ img: tsLogo, text: "TypeScript" });
   
@@ -61,6 +61,7 @@ const RecentProjects = () => {
 
   var driftMenuToolLogos: Array<{ img: string; text: string }> = [];
   driftMenuToolLogos.push({ img: luaLogo, text: "Lua" });
+  driftMenuToolLogos.push({ img: htmlLogo, text: "HTML" });
 
   var fixoToolLogos: Array<{ img: string; text: string }> = [];
   fixoToolLogos.push({ img: netLogo, text: ".NET" });
